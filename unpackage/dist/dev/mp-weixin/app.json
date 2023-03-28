@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/tab/index/index",
+    "pages/tab/my/my"
+  ],
+  "subPackages": [
+    {
+      "root": "sub_my",
+      "pages": [
+        "pages/list/list"
+      ],
+      "name": "my"
+    }
+  ],
+  "window": {
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "移动开发框架",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#EFEFF4"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/tab/index/index",
+        "iconPath": "/static/tabBar/home.png",
+        "selectedIconPath": "/static/tabBar/home1.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/tab/my/my",
+        "iconPath": "/static/tabBar/user.png",
+        "selectedIconPath": "/static/tabBar/user1.png",
+        "text": "我的"
+      }
+    ],
+    "color": "#999999",
+    "selectedColor": "#593A25",
+    "borderStyle": "white",
+    "backgroundColor": "#fff"
+  },
+  "preloadRule": {
+    "pages/tab/index/index": {
+      "network": "all",
+      "packages": [
+        "my"
+      ]
+    },
+    "pages/tab/my/my": {
+      "network": "all",
+      "packages": [
+        "my"
+      ]
+    }
+  },
+  "usingComponents": {}
+}

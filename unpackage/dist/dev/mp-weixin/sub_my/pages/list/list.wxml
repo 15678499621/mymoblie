@@ -1,0 +1,1 @@
+<view><uni-nav-bar vue-id="3db89a50-1" leftIcon="arrowleft" fixed="true" title="移动开发框架" bind:__l="__l"></uni-nav-bar></view>
